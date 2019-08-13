@@ -37,21 +37,22 @@ class Movie
         this.rating=rating;
         this.yearReleased=yearReleased;
     }
-    printRating()
+    printRating(rating)
     {
-        console.log(this.rating)
+        myMovie.rating=rating; 
+        console.log(myMovie.rating)
     }
-    printYear()
+    printYear(year)
     {
-       console.log(this.yearReleased)
+       myMovie.yearReleased=year;
+        console.log(myMovie.yearReleased)
     }
 }
 let myMovie= new Movie("Lion King", "5 Stars", "1993");
-myMovie.rating= "3 stars";
-myMovie.yearReleased="2019";
 
-myMovie.printRating();
-myMovie.printYear();
+
+myMovie.printRating("2 stars");
+myMovie.printYear("1999");
 
 
 
